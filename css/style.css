@@ -1,0 +1,454 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+/*=============================================
+            Common css start
+================================================*/
+  *{
+
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing:border-box;
+    list-style-type: none;
+  }
+
+  img {
+    vertical-align:middle;
+  }
+
+ul ol{
+    list-style: none;
+
+}
+
+a{
+    text-decoration:none;
+    display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6,span,div,p,li,a{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:1280px;
+    margin:auto;
+}
+:root{
+    --popins : 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    --primary_color:#1C1E53;
+    --text_color:Dark blue;
+    --white_color:White;
+}
+
+/*=============================================
+            Common css end
+================================================*/
+
+/*=============================================
+             Navbar css start
+ 
+================================================*/
+nav {
+    padding:32px 0;
+    background-color: var(--primary_color);
+}
+
+nav .menu_parent{
+    display:flex;
+    justify-content:space-between;
+}
+
+nav .menu_parent .menu_items ul{
+    display:flex;
+    column-gap:37px;
+}
+
+nav .menu_parent .menu_items ul li a{
+font-family: var(--popins);
+font-size: 16px;
+color:#bbbbcb;
+font-weight: 400; /* 175% */
+transition:all linear 0.3s;
+}
+ 
+nav .menu_parent .menu_items ul li a:hover {
+    color:var(--white_color);
+
+}
+
+ .contact_button button{
+    padding:16px 48px;
+    border: 2px solid rgba(244, 246, 252, 0.20);
+    border-radius: 41px;
+    background-color:var(--primary_color);
+    color:var(--white_color);
+    
+    
+ }
+
+#banner_part {
+    padding:128px 0;
+}
+
+
+#banner_part .banner_element{
+    text-align:center;
+ }
+
+ #banner_part .banner_element h1{
+    color: var(--primary_color);
+font-family:var(--popins);
+font-size: 48px;
+font-weight: 600;
+line-height: 64px;
+padding: 0 200px;
+margin-bottom:16px;
+ }
+
+ #banner_part .banner_element p{
+    color:var(--text_color);
+text-align: center;
+
+/* Label 2 */
+font-family:var(--popins);
+font-size: 16px;
+font-weight: 500;
+line-height: 28px; /* 175% */
+margin-bottom:32px;
+ }
+
+ #banner_part .banner_element h5{
+    color: var(--text_color);
+text-align: center;
+
+/* Body 1 */
+font-family:var(--popins);
+font-size: 16px;
+font-weight: 400;
+line-height: 28px; /* 175% */
+padding:48px 270px 16px;
+ } 
+
+ #banner_part .banner_element a{
+    color: var(--Royal-Blue, #2405F2);
+text-align: center;
+
+/* Body 1 */
+font-family: var(--popins);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 175% */
+ }
+/*=============================================
+         banner part css end
+================================================*/
+
+/*=============================================
+          blog part css start
+================================================*/
+#blog_part{
+    padding:0px 0px;
+}
+
+#blog_part .blog_title{
+    color: var(--primary_color);
+
+    /* Heading 2 */
+    font-family: var(--popins);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom:48px;
+    text-align:center;
+}
+ 
+#blog_part .box_main{
+    display:flex;
+    flex-wrap:wrap;
+    row-gap:54px;
+    column-gap:30px;
+}
+
+
+#blog_part .blog_card{
+    width:405px;
+}
+
+
+#blog_part .blog_card:hover{
+    box-shadow: rgb(50, 109, 16) 0px 20px 30px -10px;
+}
+
+
+#blog_part .blog_card .blog_card_text{
+    padding:0 15px 10px;
+}
+
+#blog_part .blog_card .blog_card_text p{
+    color:var(--Dark-blue, #282938);
+
+/* Label 2 */
+font-family: var(--popins);
+font-size: 16px;
+font-weight: 500;
+line-height: 28px; /* 175% */
+padding:32px 0px 16px;
+
+}
+
+#blog_part .blog_card .blog_card_text h5{
+    color: var(--text_color,#282938);
+
+/* Heading 6 */
+font-family: var(--popins);
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 150% */
+}
+
+#blog_part .blog_card .blog_card_text .details{
+    color: var(--text_color);
+
+/* Body 1 */
+font-family: var(--popins);
+font-size: 16px;
+font-weight: 400;
+line-height: 28px; /* 175% */
+}
+
+#blog_part .blog_card .blog_card_text a{
+    color: var(--primary_color, #1C1E53);
+
+    /* Label 2 */
+    font-family:var(--popins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px; /* 175% */ 
+} 
+
+/*=============================================
+          blog part css end
+================================================*/
+
+
+/*=============================================
+           footer part css start
+==============================================*/
+#footer_part{
+    padding:96px 0 0;
+    background-color: var(--primary_color);
+    margin-top:128px;
+}
+
+#footer_part .footer_wrapper{
+    display:flex;
+    column-gap:141px;
+    align-items:flex-start;
+}
+
+#footer_part .footer_wrapper .footer_left p{
+    color: var(--White, #FFF);
+
+/* Label 2 */
+font-family: var(--popins);
+font-size: 16px;
+font-weight: 500;
+line-height: 28px; /* 175% */
+opacity: 0.8;
+margin-top:22px;
+}
+
+#footer_part .footer_wrapper .footer_left .contact_info{
+    display:flex;
+    background-color: #FCD980;
+    padding:18px 37px;
+    column-gap:29px;
+    margin-top:86px;
+}
+
+#footer_part .footer_wrapper .footer_left .contact_info .email h4{
+    color: var(--primary_color);
+font-family: var(--popins);
+font-size: 18px;
+font-weight: 500;
+line-height: 32px; 
+}
+
+#footer_part .footer_wrapper .footer_left .contact_info .email a{
+color: var(--primary_color);
+font-family: var(--popins);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+}
+#footer_part .footer_wrapper .footer_left .contact_info .call h4{
+    color: var(--primary_color);
+    font-family: var(--popins);
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+#footer_part .footer_wrapper .footer_left .contact_info .call a{
+    color: var(--primary_color);
+font-family: var(--popins);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+}
+
+#footer_part .footer_wrapper .footer_right h2{
+    color:#FFF;
+font-family: var(--popins);
+font-size: 48px;
+font-weight: 600;
+}
+
+#footer_part .footer_wrapper .footer_right p{
+    color: var(--Grey, #F4F6FC);
+font-family: var(--popins);
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+margin-top:14px;
+}
+
+#footer_part .footer_wrapper .footer_right .icons{
+    margin-top:28px;
+}
+
+#footer_part .footer_wrapper .footer_right .icons a{
+    color:white;
+    margin-right:15px;
+    transform: all linear 0.2s;
+}
+
+#footer_part .footer_wrapper .footer_right .icons a 
+i[class="fa-brands fa-facebook-f"]{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    background-color:#0866FF;
+    color:#ffffff;
+    line-height:30px;
+    text-align:center;
+}
+
+
+#footer_part .footer_wrapper .footer_right .icons a 
+i[class="fa-brands fa-facebook-f"]{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    background-color:#0866FF;
+    color:#ffffff;
+    line-height:30px;
+    text-align:center;
+}
+
+#footer_part .footer_wrapper .footer_right .icons a 
+i[class="fa-brands fa-twitter"]{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    background-color:#1DA1F2;
+    color:#ffffff;
+    line-height:30px;
+    text-align:center;
+}
+
+
+#footer_part .footer_wrapper .footer_right .icons a 
+i[ class="fa-brands fa-instagram"]{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    background-color:#E94B54;
+    color:#ffffff;
+    line-height:30px;
+    text-align:center;
+}
+
+
+#footer_part .footer_wrapper .footer_right .icons a 
+i[  class="fa-brands fa-linkedin"]{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    background-color:#0077B5;
+    color:#ffffff;
+    line-height:30px;
+    text-align:center;
+}
+#footer_part .footer_wrapper .footer_right .icons a:hover{
+    transform:translateY(-20px);
+}
+
+#footer_part .footer_wrapper .footer_right .icons a:hover i:hover{
+    background-color: greenyellow;
+}
+
+/*=============================================
+           footer part css end
+==============================================*/
+
+/*=============================================
+           footer bottom part css start
+==============================================*/
+#footer_bottom_part{
+    padding:32px 0;
+    background-color:var(--white_color);
+    text-align:center;
+}
+
+#footer_bottom_part .footer_bottom_wrapper {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.fb_right ul{
+    display:flex;
+    column-gap:10px;
+}
+
+#footer_bottom_part .footer_bottom_wrapper .fb_right ul{
+    color: var(--text_color #282938);
+font-family: var(--popins);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; 
+column-gap:32px;
+padding:32px 0 32px;
+
+}
+
+
+/*=============================================
+           footer bottom part css end
+==============================================*/
+
+
+
